@@ -1,6 +1,6 @@
 context:
   name: ccxt-py
-  version: "4.4.78"
+  version: "4.4.80"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/ccxt/ccxt-${{ version }}.tar.gz
-  sha256: 622c8edf5aec5bca032a0e313ecf94d6e802f8fa366edee8378a22176876a048
+  sha256: 043e15a02e0ac2acd3bc9d7331bb2eb76226c46dd74365a69706649f40c29a7a
   patches:
     - fix-README.rst.patch
 
