@@ -9,8 +9,8 @@ package:
 source:
   url: https://pypi.org/packages/source/c/ccxt/ccxt-${{ version }}.tar.gz
   sha256: 1bcf133286d0c47a9a16892bd9d5c656eb6136eb5294ef36a6c0381621eeb5a5
-  patches:
-    - fix-README.rst.patch
+  # patches:
+  #   - fix-README.rst.patch
 
 build:
   noarch: python
