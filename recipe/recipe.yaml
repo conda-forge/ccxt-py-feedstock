@@ -24,6 +24,7 @@ requirements:
   run:
     - aiodns >=1.1.1
     - aiohttp >=3.10.11
+    - coincurve
     - cryptography >=2.6.1
     - python >=${{ python_min }}
     - requests >=2.18.4
