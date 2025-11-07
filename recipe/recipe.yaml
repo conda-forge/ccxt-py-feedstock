@@ -17,6 +17,9 @@ build:
 
 requirements:
   host:
+    - if: match(python, ">=3.10")
+      then: coincurve 21.*
+      else: coincurve 20.*
     - certifi >=2018.1.18
     - python ${{ python_min }}.*
     - pip
@@ -24,9 +27,6 @@ requirements:
   run:
     - aiodns >=1.1.1
     - aiohttp >=3.10.11
-    - if: match(python, ">=3.10")
-      then: coincurve 21.*
-      else: coincurve 20.*
     - cryptography >=2.6.1
     - python >=${{ python_min }}
     - requests >=2.18.4
