@@ -11,34 +11,32 @@ source:
   sha256: dc19ff283f86dadc2b194158a5eb2c5b230055883b9f29b35b128b168e5ffa4c
 
 build:
-  noarch: python
   script: cp README.rst README.md && python -m pip install . -v
   number: 0
 
 requirements:
   host:
-    - if: match(python, ">=3.10")
-      then: coincurve 21.*
-      else: coincurve 20.*
     - certifi >=2018.1.18
-    - python ${{ python_min }}.*
+    - python
     - pip
     - setuptools
   run:
     - aiodns >=1.1.1
     - aiohttp >=3.10.11
     - cryptography >=2.6.1
-    - python >=${{ python_min }}
+    - python
     - requests >=2.18.4
     - typing-extensions >=4.4.0
     - yarl
+    - if: match(python, ">=3.10")
+      then: coincurve 21.*
+      else: coincurve 20.*
 
 tests:
   - python:
       imports:
         - ccxt
       pip_check: true
-      python_version: ${{ python_min }}.*
 
 about:
   homepage: https://github.com/ccxt/ccxt
