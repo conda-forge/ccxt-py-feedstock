@@ -24,7 +24,7 @@ requirements:
   run:
     - aiodns >=1.1.1
     - aiohttp >=3.10.11
-    - if: cmp(python, ">=3.10")
+    - if: match(python, ">=3.10")
       then: coincurve ==21.*
       else: coincurve ==20.*
     - cryptography >=2.6.1
