@@ -1,6 +1,6 @@
 context:
   name: ccxt-py
-  version: "4.5.29"
+  version: "4.5.30"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/ccxt/ccxt-${{ version }}.tar.gz
-  sha256: b7a57df7159816de18b960adeef01261329b232a70db5c97e0d9293325bce1f6
+  sha256: 412a623c92d40988b90692b3d970ba8dca22deca463d5735ab297adefdc22d06
 
 build:
   noarch: python
