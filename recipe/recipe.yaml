@@ -18,8 +18,6 @@ build:
 requirements:
   host:
     - certifi ==2026.6.17
-    - cffi ==2.0.0
-    # - charset-normalizer ==3.4.7
     - python ${{ python_min }}.*
     - pip
     - setuptools ==82.0.1
