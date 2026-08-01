@@ -9,6 +9,9 @@ package:
 source:
   url: https://pypi.org/packages/source/c/ccxt/ccxt-${{ version }}.tar.gz
   sha256: cc9931a23fea83c0ecda5878ce90d13f595e8fcc00bced077a0fef964faac4ae
+  patches:
+    - patches/relax-cryptography-pin.patch
+    - patches/relax-cffi-pin.patch
 
 build:
   noarch: python
@@ -24,11 +27,15 @@ requirements:
   run:
     - aiohttp ==3.14.1
     - aiohttp-fast-zlib ==0.3.0
+    - certifi ==2026.6.17
+    - cffi >=2.0,<3
+    - charset-normalizer ==3.4.7
     - coincurve 21.*
-    - cryptography ==49.0.0
+    - cryptography >=48,<50
     - orjson ==3.11.9
     - python >=${{ python_min }}
     - requests ==2.34.2
+    - setuptools ==82.0.1
     - typing-extensions ==4.16.0
     - uvloop ==0.22.1
     - yarl ==1.24.2
