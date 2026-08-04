@@ -10,7 +10,7 @@ source:
   url: https://pypi.org/packages/source/c/ccxt/ccxt-${{ version }}.tar.gz
   sha256: 171f9dd4c9c915b5e8dadf2730ebd9c675b590c7f03b0e420841f03a5a2195f8
   patches:
-    - patches/relax-cryptography-pin.patch
+    # - patches/relax-cryptography-pin.patch
     - patches/relax-cffi-pin.patch
 
 build:
