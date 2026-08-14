@@ -25,13 +25,13 @@ requirements:
     - pip
     - setuptools ==83.0.0
   run:
-    - aiohttp ==3.14.1
+    - aiohttp <3.15,>=3.14.3
     - aiohttp-fast-zlib ==0.3.0
     - certifi ==2026.6.17
     - cffi >=2.0,<3
     - charset-normalizer ==3.4.7
     - coincurve 21.*
-    - cryptography >=48,<50
+    - cryptography <51,>=50
     - orjson ==3.11.9
     - python >=${{ python_min }}
     - requests ==2.34.2
