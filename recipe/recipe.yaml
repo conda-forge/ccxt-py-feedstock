@@ -1,6 +1,6 @@
 context:
   name: ccxt-py
-  version: "4.5.74"
+  version: "4.5.75"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/ccxt/ccxt-${{ version }}.tar.gz
-  sha256: 3e4e4e878fce4457ffb37ed6e41942391e454d36bdf2b74edb40a7620a400d78
+  sha256: 5509c2659e4bfad6f4f5a9cea5c15ad244121263b423ae92f7ccbc4c04cfd8d9
   patches:
     # - patches/relax-cryptography-pin.patch
     - patches/relax-cffi-pin.patch
@@ -32,6 +32,7 @@ requirements:
     - charset-normalizer ==3.4.7
     - coincurve 21.*
     - cryptography <51,>=50
+    - idna ==3.18
     - orjson ==3.11.9
     - python >=${{ python_min }}
     - requests ==2.34.2
