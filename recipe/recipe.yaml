@@ -32,6 +32,7 @@ requirements:
     - charset-normalizer ==3.4.7
     - coincurve 21.*
     - cryptography <51,>=50
+    - idna ==3.18
     - orjson ==3.11.9
     - python >=${{ python_min }}
     - requests ==2.34.2
