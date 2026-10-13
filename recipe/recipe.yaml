@@ -33,7 +33,10 @@ requirements:
     - coincurve 21.*
     - cryptography <51,>=50
     - idna ==3.18
+    - multidict ==6.9.1
     - orjson ==3.11.9
+    - propcache ==0.5.2
+    - pycparser ==3.0
     - python >=${{ python_min }}
     - requests ==2.34.2
     - setuptools ==83.0.0
