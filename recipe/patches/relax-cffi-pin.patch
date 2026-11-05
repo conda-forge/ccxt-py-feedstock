@@ -1,5 +1,10 @@
 --- a/pyproject.toml
 +++ b/pyproject.toml
+@@ -56,3 +56,3 @@
+    "aiohttp-fast-zlib==0.3.0",
+-   "zlib-ng==1.0.0",
++   "zlib-ng",
+    # event loop accelerator, installed where supported (no Windows/PyPy wheels);
 @@ -85,7 +85,7 @@
      # # transitive dependencies of aiodns
      # "pycares==5.0.1",
