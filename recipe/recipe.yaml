@@ -20,14 +20,14 @@ build:
 
 requirements:
   host:
-    - certifi ==2026.6.17
+    - certifi >=2026.10.19
     - python ${{ python_min }}.*
     - pip
     - setuptools ==83.0.0
   run:
     - aiohttp <3.15,>=3.14.3
     - aiohttp-fast-zlib ==0.3.0
-    - certifi ==2026.6.17
+    - certifi >=2026.10.19
     - cffi >=2.0,<3
     - charset-normalizer ==3.4.7
     - coincurve 21.*
