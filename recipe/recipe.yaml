@@ -1,6 +1,6 @@
 context:
   name: ccxt-py
-  version: "4.5.93"
+  version: "4.5.94"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/ccxt/ccxt-${{ version }}.tar.gz
-  sha256: da110503c8fcc3e789db342eec1fe82cbe7da7f4ed52e50d9bfd521da8f17d8d
+  sha256: fbf9658309682d762387dd13c0dd1b28e233b992c54c93b22b766e40e84406bb
   patches:
     # - patches/relax-cryptography-pin.patch
     - patches/relax-cffi-pin.patch
